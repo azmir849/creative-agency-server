@@ -94,11 +94,11 @@ client.connect(err => {
       })
   })
 
-
+//Server working status
   app.get('/', (req, res) => {
     res.send('Creative Agency Server site working')
   })
 
 });
 
-app.listen(port)
+app.listen(process.env.PORT || port)
